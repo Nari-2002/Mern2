@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Counter() {
+  console.log("counter rendered")
   return (
     <div>
         counter
@@ -8,4 +9,4 @@ function Counter() {
   )
 }
 
-export default Counter
+export default React.memo(Counter)

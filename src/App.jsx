@@ -1,21 +1,16 @@
 import React from 'react'
-import Counter from './Counter'
-import Counter2 from './Counter2'
-import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
+import { BrowserRouter, Link, Routes } from 'react-router-dom'
+import { Route } from 'react-router-dom'
+import Counter from './Counter.jsx'
+import Counter2 from './Counter2.jsx'
+import Form from './Form.jsx'
+import RegistrationForm from './RegistrationForm.jsx'
+
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <div>
-          <Link to="/">Home</Link>
-          <Link to="/counter2">Counter2</Link>
-        </div>
-        <Routes>
-          <Route path="/" element={<Counter />} />
-          <Route path="/counter2" element={<Counter2 />} />
-        </Routes>
-      </BrowserRouter>
+      <RegistrationForm></RegistrationForm>
     </div>
   )
 }
